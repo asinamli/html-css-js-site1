@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box; 
+    margin: 0%;
+    padding: 0%;
+ }
+ 
+ .baslik{
+     display: flex;
+     justify-content: center;
+    
+ }
+ 
+ .menü, .sipariş {
+     border-style: dashed;
+     border-bottom: 10px;
+     justify-content: center; /* İçeriği yatay düzlemde ortalamak için */
+     
+     
+     width: 50%;
+     float: left;
+     text-align: center;
+     height: 50%;
+    /* display: flex; /* Öğeleri yatay olarak hizalamak için */
+    /* flex-direction: column; /* Öğeleri dikey olarak hizalamak için */
+    /* align-items: center; /* Öğeleri dikey eksende merkezlemek için */
+     
+ }
+ 
+ .menü a , .sipariş a {
+     text-decoration: none; /* Bağlantı alt çizgisi kaldırma */
+     margin-bottom: 20px; /* Her öğe arasında bir boşluk bırakmak için */
+     text-align: center; /* Metni merkezlemek için */
+ }
+ 
+ .menü a img , .sipariş a img {
+     width: 100px; 
+     height: 100px; 
+ }
+ 
+ .menü a p , .sipariş a p {
+     margin-top: 5px; /* Metin ile resim arasında boşluk*/
+ }

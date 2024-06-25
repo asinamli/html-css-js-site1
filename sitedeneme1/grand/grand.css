@@ -1,0 +1,139 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(to bottom right, #c96c47, #faf6f0);
+}
+
+/* #menu, #sipariş{
+        width: 35%;
+        display: inline-block;
+        border: 1px solid black;
+        vertical-align: top;
+    }*/
+
+#box-container {
+  display: grid; /*CSS Grid, bir sayfanın veya bir bölümün düzenini belirlemek için kullanılan bir modül 
+    öğeleri satırlar ve sütunlar oluşturarak ızgara benzeri bir yapı içinde yerleştirir.*/
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(30rem, 1fr)
+  ); /*yan yana konumlandırmayı sağlıyor*/
+  gap: 0.5rem; /* bir CSS Grid container'ın satırlar ve sütunlar arasındaki boşluğu belirler.*/
+  margin: 30px 400px;
+}
+
+#box-container #menu,
+#sipariş {
+ border: 1px solid black;
+  border-radius: 1rem;
+  min-height: 50rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+}
+
+#menu img,
+#sipariş img {
+  border-radius: 10px;
+  border-color: #c96c47;
+  padding: 3px;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+
+}
+
+#box-container #menu #box, #sipariş #box{
+    border: 1px solid black;
+    vertical-align: top;
+    width: 70%;
+    margin: 10px 50px 10px 90px;
+    background-color:aliceblue ;
+    border-radius: 10px;
+}
+
+
+h1{
+  letter-spacing: 2px;
+  font-family: 'Italiana', sans-serif;
+  font-size: 30px;
+  margin-top: 8px;
+  }
+  
+  
+  #box-container p{
+  background-color: rgb(203, 54, 54);
+  border-radius: 30px;
+  margin: auto 10%;
+  padding: 5px;
+  font-family: 'Nunito', sans-serif; 
+  width: 80%;
+  margin-bottom: 8px;
+  
+  
+  
+  }
+
+  #menu a, #sipariş a{
+    text-decoration: none;
+    color: aliceblue;
+    display: inline-block;
+  }
+
+
+  #menu a:hover, #sipariş a:hover{
+    color: rgb(18, 18, 18);
+    box-shadow: 2px 2px 3px rgb(18, 18, 18); /*üstüne gittiğinde gölge veriyor */
+    background-color: aliceblue;
+  
+     }
+
+     #konum #map{
+      flex: 1 1 45rem;
+      width: 80%;
+      object-fit: cover;
+      border: 0.2px  black;
+      border-radius: 10px;
+      height: 100%;
+  box-shadow: 2px 2px 3px rgb(18, 18, 18);
+
+    }
+
+    h3{
+font-size: small;
+    }
+
+    #share{
+      padding: 2rem 0;
+    }
+
+    #share a{
+      width: 5rem;
+      height: 5rem;
+      line-height: 5rem;
+      color: black;
+      font-size: 2rem;
+      border: var(--border);
+      border-radius: 50%;
+      margin: 0.3rem;
+      }
+
+      #share a:hover{
+        background-color: #e84242;
+      
+      }
+
+      #hakkımızda h2{
+        font-size: 20px;
+      }
+
+      #hakkımızda p{
+        font-size: small;
+      }
